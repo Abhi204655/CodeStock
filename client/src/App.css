@@ -1,0 +1,231 @@
+@font-face{
+    src: url('./assets/fonts/Potra.ttf');
+    font-family: landingFont;
+}
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 0.4em;
+}
+ 
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(54, 76, 97);
+  outline: 1px solid slategrey;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.editor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #263238;
+
+}
+
+/* topbar code  */
+
+.topbar-wrapper{
+    width: 100%;
+    height: 7vh;
+    background: #252f35;
+    position: relative;
+}
+.topbar-wrapper::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right,red,blue,green);
+}
+.topbar-wrapper .topbar{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topbar #compile{
+    outline: none;
+    border:none;
+    background: rgb(58, 58, 58);
+    color: rgb(153, 153, 153);
+    padding: 0.4em 1.2em;
+    cursor: pointer;
+    position: relative;
+}
+.loading{
+    margin-right: 5px;
+}
+
+/* topbar code ends  */
+
+
+/* codeeditor code  */
+.CodeMirror{
+    width: 100%;
+    min-height: 300px;
+    height: 64vh !important;
+    z-index: 0 !important;
+}
+
+/* codeeditor code ends  */
+
+
+/* inputfileds code  */
+
+.inputs{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-height: 29vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    position: relative;
+
+}
+.inputContainer{
+    width: 50%;
+    height: 29vh;
+}
+.inputContainer .textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    background: #252f35;
+    color: white;
+    padding: 1em;
+    position: relative;
+    border: 1px solid rgb(54, 76, 97);
+}
+.inputContainer textarea:focus{
+    outline: none;
+}
+
+/* inputfield code ends  */
+
+
+
+
+.ant-select-selector{
+    background: #252f35 !important;
+    color: rgb(153, 153, 153) !important;
+    border: none !important;
+    border-bottom:1px solid rgb(153, 153, 153) !important;
+}
+.ant-select-arrow{
+    color: rgb(153, 153, 153) !important;
+}
+.ant-select-selector:focus{
+    border: none !important;
+    outline: none !important;
+}
+
+.ant-select-dropdown-menu-item {
+    padding: 0px;
+    margin: 0px;
+    background: red !important;
+}
+
+
+/* landing page code */
+
+
+.landing{
+    width: 100%;
+    height: 100vh;
+    background: #263238;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.landing-header h1{
+    font-size: 2.3em;
+    font-family: 'landingFont',sans-serif;
+    font-weight:200;
+    letter-spacing: 3px;
+    color: white;
+}
+.landing-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.landing-form form{
+    margin: 2em 0;
+}
+.landing-form form .select-drop{
+    width:400px;
+    height: 30px;
+}
+.landing-form form button{
+    width: 100px;
+    height: 33px;
+    border: none;
+    border-bottom: 1px solid rgb(153, 153, 153);
+    cursor: pointer;
+    background: #262a2c;
+    outline: none;
+    color: white;
+}
+.form-desc h1{
+    font-family: 'landingFont',sans-serif;
+    color:white;
+    font-size: 5em;
+    line-height: 1;
+    text-align: center;
+}
+.form-desc p{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 3px;
+}
+
+.landing-footer p{
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+}
+.option{
+    color: white !important;
+}
+.option:hover{
+    color: #252f35 !important;
+}
+@media(max-width:500px){
+    .form-desc h1{
+        font-size: 3em;
+    }
+    .form-desc p{
+        font-size: 1em;
+        font-weight: normal;
+        letter-spacing: 2px;
+        padding: 1em;
+    }
+    .landing-form form .select-drop{
+        width: 200px;
+    }
+}
+
+/* landing page code ends  */

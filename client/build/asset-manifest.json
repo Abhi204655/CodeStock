@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04a2ad14.chunk.css",
+    "main.js": "/static/js/main.1f3fb2cb.chunk.js",
+    "main.js.map": "/static/js/main.1f3fb2cb.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.09b85ec0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.09b85ec0.js.map",
+    "static/css/2.80db7966.chunk.css": "/static/css/2.80db7966.chunk.css",
+    "static/js/2.88d5b372.chunk.js": "/static/js/2.88d5b372.chunk.js",
+    "static/js/2.88d5b372.chunk.js.map": "/static/js/2.88d5b372.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.59af34efc5dc3eb0504bf0ca707f6906.js": "/precache-manifest.59af34efc5dc3eb0504bf0ca707f6906.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.80db7966.chunk.css.map": "/static/css/2.80db7966.chunk.css.map",
+    "static/css/main.04a2ad14.chunk.css.map": "/static/css/main.04a2ad14.chunk.css.map",
+    "static/js/2.88d5b372.chunk.js.LICENSE.txt": "/static/js/2.88d5b372.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/Potra.4c166a66.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09b85ec0.js",
+    "static/css/2.80db7966.chunk.css",
+    "static/js/2.88d5b372.chunk.js",
+    "static/css/main.04a2ad14.chunk.css",
+    "static/js/main.1f3fb2cb.chunk.js"
+  ]
+}
