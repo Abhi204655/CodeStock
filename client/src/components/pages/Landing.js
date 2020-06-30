@@ -13,6 +13,7 @@ const Landing = (props) => {
     const handleChange = (value) => {
         setLang(value);
     }
+
     const handleSubmit = (e) => {
         e.preventDefault();
         props.changeLanguage(lang);
@@ -30,7 +31,7 @@ const Landing = (props) => {
                     <p>Write code | Share code | Learn code</p>
                 </div>
                 <form onSubmit={handleSubmit}>
-                    <Select defaultValue="Py" onChange={handleChange} dropdownStyle={{ background: '#252f35', color: 'white' }} className="select-drop">
+                    <Select defaultValue={props.language} onChange={handleChange} dropdownStyle={{ background: '#252f35', color: 'white' }} className="select-drop">
                         <Option value="C" className="option">C</Option>
                         <Option value="C++" className="option">C++</Option>
                         <Option value="Py" className="option">Python</Option>
@@ -46,5 +47,8 @@ const Landing = (props) => {
     )
 }
 
+const mapStateToProps = state => ({
+    language: state.code.language
+})
 
-export default connect(null, { changeLanguage })(Landing);
+export default connect(mapStateToProps, { changeLanguage })(Landing);
