@@ -12,7 +12,7 @@ export const compileCode = (code, inputData) => async (dispatch, getState) => {
             language: getState().code.language
         }
         console.log(getState().language)
-        const res = await axios.post('http://localhost:5000/compile', data);
+        const res = await axios.post('/compile', data);
         dispatch({
             type: CODE_COMPILED,
             payload: res.data
