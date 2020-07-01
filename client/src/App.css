@@ -248,7 +248,14 @@
 .not-found-p{
     color: white;
     text-align: center;
-    line-height: 1;
+    line-height: 1.2;
+    
+    padding: 0 1em;
 }
 
+@media(max-width:600px){
+    .not-found-h1{
+        font-size: 4em;
+    }
+}
 /* not found ends  */
