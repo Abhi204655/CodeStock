@@ -231,3 +231,24 @@
 }
 
 /* landing page code ends  */
+
+
+
+/* not found page  */
+
+.not-found-h1{
+    font-size: 7em;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'landingFont',sans-serif;
+    line-height: 1;
+}
+.not-found-p{
+    color: white;
+    text-align: center;
+    line-height: 1;
+}
+
+/* not found ends  */

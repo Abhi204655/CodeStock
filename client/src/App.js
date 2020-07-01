@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import CodeEditor from './components/CodeEditor';
+import NotFound from './components/pages/NotFound';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 
@@ -20,6 +21,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Landing} />
             <Route exact path="/code" component={CodeEditor} />
+            <Route path="*" component={NotFound} />
           </Switch>
         </div>
       </Provider>
