@@ -20,7 +20,8 @@ class CodeEditor extends Component {
     state = {
         code: '',
         mode: '',
-        input: ''
+        input: '',
+        error: ''
     }
 
     showNortification = (type, msg) => {
@@ -67,6 +68,10 @@ class CodeEditor extends Component {
                 this.showNortification('error', 'Failed to compile')
             }
         }
+        if (prevProps.error !== this.props.error) {
+            this.showNortification('error', this.props.error)
+        }
+
     }
 
     handleChange = (e) => {

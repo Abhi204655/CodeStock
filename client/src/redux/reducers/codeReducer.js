@@ -5,7 +5,7 @@ const initialState = {
     output: {},
     loading: false,
     error: null,
-    language: 'Py'
+    language: ''
 }
 
 export default (state = initialState, action) => {

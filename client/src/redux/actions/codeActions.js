@@ -26,6 +26,9 @@ export const compileCode = (code, inputData) => async (dispatch, getState) => {
 }
 
 export const changeLanguage = (lang) => dispatch => {
+    if (lang === '') {
+        lang = 'Py'
+    }
     dispatch(
         { type: CHANGE_LANG, payload: lang }
     )
