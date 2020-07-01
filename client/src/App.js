@@ -8,7 +8,7 @@ import store from './redux/store';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Landing from './components/pages/Landing';
 
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.dark.css';
 
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/material.css';

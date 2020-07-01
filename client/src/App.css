@@ -132,17 +132,14 @@
 .ant-select-arrow{
     color: rgb(153, 153, 153) !important;
 }
-.ant-select-selector:focus{
-    border: none !important;
-    outline: none !important;
-}
 
-.ant-select-dropdown-menu-item {
-    padding: 0px;
-    margin: 0px;
-    background: red !important;
+.ant-select-focused .ant-select-selector,
+.ant-select-selector:focus,
+.ant-select-selector:active,
+.ant-select-open .ant-select-selector {
+  border-color: #d9d9d9 !important;
+  box-shadow: none !important;
 }
-
 
 /* landing page code */
 
