@@ -11,7 +11,6 @@ export const compileCode = (code, inputData) => async (dispatch, getState) => {
             input: inputData ? inputData : '',
             language: getState().code.language
         }
-        console.log(getState().language)
         const res = await axios.post('/compile', data);
         dispatch({
             type: CODE_COMPILED,

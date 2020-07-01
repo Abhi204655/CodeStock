@@ -71,6 +71,10 @@ class CodeEditor extends Component {
         if (prevProps.error !== this.props.error) {
             this.showNortification('error', this.props.error)
         }
+        if (prevProps.code !== this.props.code) {
+            this.setState({ code: this.props.code.code });
+        }
+
 
     }
 

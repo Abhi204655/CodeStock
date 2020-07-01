@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Select } from 'antd';
-import { changeLanguage } from '../redux/actions/codeActions';
+import { changeLanguage, setCode } from '../redux/actions/codeActions';
 import { LoadingOutlined } from '@ant-design/icons';
 
 const { Option } = Select;
@@ -9,6 +9,7 @@ const { Option } = Select;
 class Topbar extends Component {
 
     handleChange = (value) => {
+        this.props.setCode('');
         this.props.changeLanguage(value);
     }
     render() {
@@ -44,4 +45,4 @@ const getStateFromProps = (state) => ({
     language: state.code.language
 })
 
-export default connect(getStateFromProps, { changeLanguage })(Topbar);
+export default connect(getStateFromProps, { changeLanguage, setCode })(Topbar);
