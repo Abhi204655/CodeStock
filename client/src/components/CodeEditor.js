@@ -96,7 +96,13 @@ class CodeEditor extends Component {
                             styleActiveLine: true,
                             styleActiveSelected: true,
                             theme: 'material',
-                            lineNumbers: true
+                            lineNumbers: true,
+                            closeBrackets: true,
+                            autoCloseBrackets: {
+                                pairs: "\"\"**//__()[]{}''``",
+                                triples: "",
+                                explode: "[]{}"
+                            }
                         }}
                         onBeforeChange={(editor, data, value) => {
                             this.setState({ code: value });

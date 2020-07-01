@@ -12,6 +12,7 @@ import 'antd/dist/antd.css';
 
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/material.css';
+import 'codemirror/addon/edit/closebrackets';
 
 function App() {
   return (
