@@ -13,6 +13,7 @@ import 'antd/dist/antd.dark.css';
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/material.css';
 import 'codemirror/addon/edit/closebrackets';
+import 'codemirror/keymap/sublime';
 
 function App() {
   return (

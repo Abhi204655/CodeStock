@@ -99,10 +99,11 @@ class CodeEditor extends Component {
                             lineNumbers: true,
                             closeBrackets: true,
                             autoCloseBrackets: {
-                                pairs: "\"\"**//__()[]{}''``",
+                                pairs: "\"\"**__()[]{}''``",
                                 triples: "",
                                 explode: "[]{}"
-                            }
+                            },
+                            keyMap: "sublime"
                         }}
                         onBeforeChange={(editor, data, value) => {
                             this.setState({ code: value });
