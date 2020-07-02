@@ -59,7 +59,12 @@
     align-items: center;
     justify-content: space-between;
 }
-.topbar #compile{
+.topbar-btngroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topbar-btn{
     outline: none;
     border:none;
     background: rgb(58, 58, 58);
@@ -67,6 +72,7 @@
     padding: 0.4em 1.2em;
     cursor: pointer;
     position: relative;
+    margin-right:1em;
 }
 .loading{
     margin-right: 5px;

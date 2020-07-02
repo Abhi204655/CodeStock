@@ -33,8 +33,8 @@ export const changeLanguage = (lang) => dispatch => {
     )
 }
 
-export const setCode = (code, input) => dispatch => {
+export const setCode = (code) => dispatch => {
     dispatch(
-        { type: SET_CODE, payload: { code, input } }
+        { type: SET_CODE, payload: { code } }
     )
 }

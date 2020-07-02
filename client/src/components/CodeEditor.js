@@ -35,7 +35,7 @@ class CodeEditor extends Component {
     }
 
     compileCode = () => {
-        this.props.setCode(this.state.code, this.state.input);
+        this.props.setCode(this.state.code);
         this.props.compileCode(this.state.code, this.state.input)
     }
 
@@ -72,7 +72,7 @@ class CodeEditor extends Component {
             this.showNortification('error', this.props.error)
         }
         if (prevProps.code !== this.props.code) {
-            this.setState({ code: this.props.code.code });
+            this.setState({ code: this.props.code });
         }
 
 
@@ -87,7 +87,7 @@ class CodeEditor extends Component {
     render() {
         return (
             <div className="editor">
-                <Topbar compileCode={this.compileCode} />
+                <Topbar compileCode={this.compileCode} code={this.props.code} />
                 <div className="code-wrapper">
                     <CodeMirror
                         value={this.state.code}

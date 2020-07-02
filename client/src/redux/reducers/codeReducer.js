@@ -35,20 +35,18 @@ export default (state = initialState, action) => {
             }
         case SET_CODE:
             sessionStorage.setItem('code', action.payload.code)
-            sessionStorage.setItem('input', action.payload.input)
             return {
                 ...state,
-                code: action.payload
+                code: action.payload.code
             }
         default:
             const lang = localStorage.getItem('lang');
             const code = sessionStorage.getItem('code');
-            const input = sessionStorage.getItem('input');
             return {
                 ...state,
                 language: lang ? lang : 'Py',
                 code: code ? code : '',
-                input: input ? input : ''
+                input: ''
             }
     }
 }
