@@ -191,17 +191,25 @@
     outline: none;
     color: white;
 }
-.form-desc h1{
+.lfm__typing_effect{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lfm__typing_effect_text, .lfm__typing_effect_cursor{
     font-family: 'landingFont',sans-serif;
     color:white;
     font-size: 5em;
     line-height: 1;
     text-align: center;
+    margin-bottom: .5em;
 }
 .form-desc p{
     text-align: center;
+    font-family: 'landingFont',sans-serif;
     color: white;
-    font-weight: 700;
+    font-weight: normal;
     line-height: 1;
     letter-spacing: 3px;
 }
@@ -219,7 +227,7 @@
     color: #252f35 !important;
 }
 @media(max-width:500px){
-    .form-desc h1{
+    .lfm__typing_effect_text, .lfm__typing_effect_cursor{
         font-size: 3em;
     }
     .form-desc p{
@@ -227,6 +235,7 @@
         font-weight: normal;
         letter-spacing: 2px;
         padding: 1em;
+        font-family: 'landingFont',sans-serif;
     }
     .landing-form form .select-drop{
         width: 200px;

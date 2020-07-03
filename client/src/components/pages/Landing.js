@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ReactTypingEffect from 'react-typing-effect';
 import { useHistory } from 'react-router';
 import { connect } from 'react-redux';
 import { changeLanguage } from '../../redux/actions/codeActions';
@@ -27,7 +28,13 @@ const Landing = (props) => {
             </div>
             <div className="landing-form">
                 <div className="form-desc">
-                    <h1>WELCOME TO CODESTOCK</h1>
+                    {/* <h1>WELCOME TO CODESTOCK</h1> */}
+                    <ReactTypingEffect
+                        text="WELCOME TO CODESTOCK" //text=["Hello.", "World!"]
+                        typingDelay={1000}
+                        eraseDelay={2500}
+                        speed={200}
+                    />
                     <p>Write code | Share code | Learn code</p>
                 </div>
                 <form onSubmit={handleSubmit}>
@@ -41,7 +48,7 @@ const Landing = (props) => {
                 </form>
             </div>
             <div className="landing-footer">
-                <p>Made with love by Abhi</p>
+                <p>Made with ❤ by Abhi</p>
             </div>
         </div>
     )
