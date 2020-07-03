@@ -11,7 +11,7 @@ export const compileCode = (code, inputData) => async (dispatch, getState) => {
             input: inputData ? inputData : '',
             language: getState().code.language
         }
-        const res = await axios.post('/compile', data);
+        const res = await axios.post('http://codestockide.herokuapp.com/compile', data);
         dispatch({
             type: CODE_COMPILED,
             payload: res.data
